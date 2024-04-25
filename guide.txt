@@ -1,0 +1,12 @@
+sudo apt remove nodejs (if any older version have)
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash   (install nvm to install nodejs)
+
+After downloading the script, run the following command to ensure NVM is available in your current shell session:
+
+source ~/.bashrc
+
+nvm install node
+node --version
+
+npx create-react-app myfrontend

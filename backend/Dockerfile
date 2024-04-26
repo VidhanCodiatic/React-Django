@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y build-essential
 
 # Install Supervisor
 RUN apt-get update && apt-get install -y supervisor
-COPY ./backend/supervisord.ini /etc/supervisor/supervisord.ini
+COPY supervisord.ini /etc/supervisor/supervisord.ini
 
 # Upgrade pip
 RUN pip install --upgrade pip

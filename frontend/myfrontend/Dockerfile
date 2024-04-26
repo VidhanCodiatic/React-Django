@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Install Supervisor
 RUN apt-get update && apt-get install -y supervisor
-COPY ./frontend/myfrontend/supervisord.ini /etc/supervisor/supervisord.ini
+COPY supervisord.ini /etc/supervisor/supervisord.ini
 
 # Copy package.json and package-lock.json
 COPY ./frontend/myfrontend/package.json /app/package.json
